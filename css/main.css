@@ -22,3 +22,54 @@ nav {
 span {
   color: #ee252f;
 }
+.container {
+  padding-top: 3.0rem;
+}
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #050500 !important;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #f8df1f !important;
+  border: none !important;
+  padding: 0.7rem 1.7rem  !important;
+  text-transform: uppercase;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 400;
+}
+#one {
+  padding-bottom: 7.0rem;
+}
+#two {
+  padding: 3.0rem;
+  background-color: #f3f3f3;
+}
+.container .col-md-4 img {
+  padding-left: 4.0rem;
+}
+.yellow {
+  background-color: #f8df1f;
+  height: 15px;
+}
+footer {
+  background-color: #080801;
+  height: 150px;
+}
+footer img {
+  max-width: 300px;
+  margin: auto;
+  display: block;
+  padding-top: 1.5rem;
+}
