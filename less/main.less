@@ -10,8 +10,9 @@ header {
   height: 375px;
 }
 nav {
-  height: 100px;
+  height: 150px;
   background-color: @yellow;
+  margin: auto;
 }
 .nav {
   padding: 2.0rem;
@@ -20,6 +21,55 @@ nav {
 .nav-link {
     color: @links;
 }
+//Beginning of HAMBURGER MENU no display desktop nav
+.nav {
+  display: none;
+}
+//End of desktop no display
+
+
+/*************************************START HAMBURGER MENU*****************************************************************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.4em; width:100%; background:@yellow; color: white; font-family: 'Roboto', sans-serif; position:absolute; text-align:center; font-size:9px;}
+.menu ul {margin: 0; padding: 0; background:@yellow; list-style-type: none; list-style-image: none; color: white;}
+.menu li {display: block; color: white;  padding:15px 0 15px 0; border-bottom:@links 1px solid;}
+.menu li:hover{display: block;  color: white;  background:@yellow; padding:15px 0 15px 0; }
+.menu ul li a { text-decoration:none;  background:@yellow; margin: 0px; color: white;}
+.menu ul li a:hover {  color: #000000; background:@yellow; text-decoration:none;}
+.menu a{text-decoration:none; color: @links; background:@yellow;  padding: 10px 12px; font-size: 0.9rem;}
+.menu a:hover{text-decoration:none; background:@yellow; color: #ffffff;}
+
+
+/********************************************END HAMBURGER MENU***********************************************************/
 span {
   color: @red;
 }
@@ -76,3 +126,19 @@ footer img {
   display: block;
   padding-top: 1.5rem;
 }
+/* 1200px Media query starts****************************/
+@media (min-width: 1200px)  {
+
+
+  /* Navbar container */
+  .nav  {
+    display: inline !important;
+
+  }
+
+
+  .menu, .hamburger, .cross {
+		display: none;
+	}
+}
+/* 1200px Media query ends****************************/
