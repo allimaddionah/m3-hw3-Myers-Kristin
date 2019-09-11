@@ -12,16 +12,33 @@ nav {
   height: 150px;
   background-color: #f8df1f;
   margin: auto;
+  padding: 20px;
 }
 .nav {
   padding: 2.0rem;
   padding-left: 4.0rem;
+  display: none;
 }
-.nav-link {
+.link {
   color: #050500;
 }
-.nav {
-  display: none;
+#desktop-link {
+  padding: 15px;
+  line-height: 128px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container {
+  padding-top: 3.0rem;
+}
+.container .col-md-4 img {
+  padding-left: 4.0rem;
+}
+.container .row .col-md-2 img {
+  max-width: 232px;
+}
+.container img {
+  max-width: 600px;
 }
 /*************************************START HAMBURGER MENU*****************************************************************/
 .hamburger {
@@ -113,9 +130,6 @@ nav {
 span {
   color: #ee252f;
 }
-.container {
-  padding-top: 3.0rem;
-}
 button {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -147,8 +161,8 @@ p {
   padding: 3.0rem;
   background-color: #f3f3f3;
 }
-.container .col-md-4 img {
-  padding-left: 4.0rem;
+#two .col-md-3 img {
+  max-width: 176px;
 }
 .yellow {
   background-color: #f8df1f;
@@ -174,6 +188,20 @@ footer img {
   .hamburger,
   .cross {
     display: none;
+  }
+}
+/* 1200px Media query ends****************************/
+/* 460px Media query starts****************************/
+@media (max-width: 460px) {
+  .container img {
+    width: 100%;
+  }
+}
+/* 1200px Media query ends****************************/
+/* 460px Media query starts****************************/
+@media (max-width: 300px) {
+  footer img {
+    width: 100%;
   }
 }
 /* 1200px Media query ends****************************/
